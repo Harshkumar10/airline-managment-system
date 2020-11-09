@@ -13,6 +13,19 @@
 		<div><h1 class="logo"><img src="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="80" width="80"/></h1></div>
 		<div><h1 class="company-name">SHS Flight Booking</h1></div>
 	</header>
+
+	<nav>
+		<div class="main">
+			<div><button onclick="window.location='./i.php' ">Airport</button></div>
+			<div><button onclick="window.location='./v.php' ">Flight</button></div>
+			<div><button onclick="window.location='./Ticket.php' ">Ticket</button></div>
+			<div><button onclick="window.location='./lo.php' ">Logout</button></div>
+
+			<div><button onclick="window.location='./Ticket1.php' ">Ticket Prices</button></div>
+			<div><button onclick="window.location='./Profile.php' ">Profile</button></div>
+		</div>
+	</nav>
+	
 	<h2 style="text-align:center;">Airport records</h2>
 	<div style="margin-top:0px;text-align:right;">
 		<form  action="Search.php" method="post">

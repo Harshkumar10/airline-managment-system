@@ -1,6 +1,3 @@
-<?php
-	include("a.php");
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +10,19 @@
 		<div><h1 class="company-name">SHS Flight Booking</h1></div>
 	</header>
 
-<script>
+	<nav>
+		<div class="main">
+			<div><button onclick="window.location='./i.php' ">Airport</button></div>
+			<div><button onclick="window.location='./v.php' ">Flight</button></div>
+			<div><button onclick="window.location='./Ticket.php' ">Ticket</button></div>
+			<div><button onclick="window.location='./lo.php' ">Logout</button></div>
+
+			<div><button onclick="window.location='./Ticket1.php' ">Ticket Prices</button></div>
+			<div><button onclick="window.location='./Profile.php' ">Profile</button></div>
+		</div>
+	</nav>
+	<p id="salutation" style="color:white"></p>
+	<script>
 	var g;
 	var time=new Date().getHours();
 	if(time<12){
@@ -27,23 +36,15 @@
 	{
 		g="Good evening";
 	}
-	document.write("<font color='orange'>"+g);
-</script>
+	document.getElementById("salutation").innerHTML=g;
+	</script>
+
 
 	<?php
+		session_start();
+		if(isset($_SESSION['username']))
 		echo $_SESSION['username']; 
 	?>
-	
-	<div class="main">
-		<div><button onclick="window.location='./i.php' ">Airport</button></div>
-		<div><button onclick="window.location='./v.php' ">Flight</button></div>
-		<div><button onclick="window.location='./Ticket.php' ">Ticket</button></div>
-		<div><button onclick="window.location='./lo.php' ">Logout</button></div>
-
-		<div><button onclick="window.location='./Ticket1.php' ">Ticket Prices</button></div>
-		<div><button onclick="window.location='./Profile.php' ">Profile</button></div>
-	</div>
-
 	<!-- <marquee  scrollamount="15" behavior="alternate">
 		<img src="https://image.shutterstock.com/image-vector/concept-illustration-template-book-your-600w-1197774070.jpg" height="350" width="500" />
 		<img src="https://image.shutterstock.com/image-photo/booking-flight-travel-traveler-search-600w-520314439.jpg" height="350" width="500" />

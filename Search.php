@@ -4,16 +4,25 @@ require('d.php');
 ?>
 <html>
 <head>
-<style>
-table,th,td{
-	border: 1px solid black;
-}
-</style>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1 style="text-align:center;"><img src="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="100" width="100"/></h1>
-<h1 style="text-align:center;">SHS Flight Booking</h1>
+    <header>
+		<div><h1 class="logo"><img src="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="80" width="80"/></h1></div>
+		<div><h1 class="company-name">SHS Flight Booking</h1></div>
+	</header>
+
+	<nav>
+		<div class="main">
+			<div><button onclick="window.location='./i.php' ">Airport</button></div>
+			<div><button onclick="window.location='./v.php' ">Flight</button></div>
+			<div><button onclick="window.location='./Ticket.php' ">Ticket</button></div>
+			<div><button onclick="window.location='./lo.php' ">Logout</button></div>
+
+			<div><button onclick="window.location='./Ticket1.php' ">Ticket Prices</button></div>
+			<div><button onclick="window.location='./Profile.php' ">Profile</button></div>
+		</div>
+	</nav>
 <?php 
  if(isset($_POST['submitS']))
 	 { 
@@ -22,14 +31,14 @@ table,th,td{
 		  <h2 style="text-align:center;">Airport records</h2>
          <table width="70%" border="1" style="border-collapse:collapse;">
          <thead>
-         <tr style="background-color:#FF0000">
-         <th><strong>Airport Name</strong></th>
-         <th><strong>COUNTRY</strong></th>
-         <th><strong>CITY</strong></th>
-         </tr>
-         </thead>
-         </tbody>
-         <?php
+        <tr style="background-color:#FF0000">
+        <th><strong>Airport Name</strong></th>
+        <th><strong>COUNTRY</strong></th>
+        <th><strong>CITY</strong></th>
+        </tr>
+        </thead>
+        </tbody>
+        <?php
             $sel_query="SELECT AP_NAME,COUNTRY,CITY FROM airport WHERE STATE='$res1'";
             $result = mysqli_query($con,$sel_query);
             while($row = mysqli_fetch_assoc($result)) { ?>
@@ -38,8 +47,8 @@ table,th,td{
                    <td align="center"><?php echo $row["COUNTRY"]; ?></td>
                    <td align="center"><?php echo $row["CITY"]; ?></td>
                    </tr>
-			<?php }
-	        }?> 
+		<?php }
+	    }?> 
 	
 <?php
     if(isset($_POST['submitC']))

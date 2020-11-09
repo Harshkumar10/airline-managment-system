@@ -20,6 +20,8 @@ header{
     margin-top: 40px;
 }
 .main {
+
+    margin: 25px 50px 75px 100px;
     display: flex;
     flex-direction: row;
 }
