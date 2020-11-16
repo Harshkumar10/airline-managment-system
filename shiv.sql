@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:1433
--- Generation Time: Nov 09, 2020 at 06:14 AM
+-- Generation Time: Nov 16, 2020 at 07:57 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -59,6 +59,22 @@ INSERT INTO `airport` (`AP_NAME`, `STATE`, `COUNTRY`, `CITY`) VALUES
 ('Sardar Vallabhbhai Patel International Airport', 'Gujarat', 'India', 'Ahmedabad'),
 ('Surat International Airport', 'Gujarat', 'India', 'Surat'),
 ('Tampa International Airport', 'Florida', 'United States', 'Tampa');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `feedback`
+--
+
+CREATE TABLE `feedback` (
+  `Name` varchar(35) NOT NULL,
+  `email` varchar(35) NOT NULL,
+  `SOURCE` varchar(30) NOT NULL,
+  `DESTINATION` varchar(30) NOT NULL,
+  `FLIGHTCODE` varchar(20) NOT NULL,
+  `QUERY` varchar(35) NOT NULL,
+  `Feed` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -202,8 +218,7 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`username`, `Pic`) VALUES
-('Shivraj@1999', 'Pics/twilight11.jpg'),
-('u18co109', 'Pics/twilight12.jpg');
+('Shivraj@1999', 'Pics/twilight11.jpg');
 
 -- --------------------------------------------------------
 
@@ -587,8 +602,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `password`, `Name`, `email`, `trn_date`, `PASSPORTNO`, `AGE`, `SEX`, `CITY`, `STATE`, `COUNTRY`) VALUES
-('u18co109', '1234', 'Harsh Kumar', 'rathoreshivraj1997@gmail.com', '2020-11-08', 'A12345676', 21, 'Male', 'Patna', 'Bihar', 'India'),
-('Shivraj@1999', '1234', 'Shivraj Singh Rathore', 'rathoreshivraj1999@gmail.com', '2020-11-08', 'A12345678', 21, 'Male', 'Mumbai', 'Maharashtra', 'India');
+('Shivraj@1999', '1234', 'Shivraj Singh Rathore', 'rathoreshivraj1999@gmail.com', '2020-11-09', 'A12345678', 21, 'Male', 'Mumbai', 'Maharashtra', 'India');
 
 --
 -- Indexes for dumped tables
@@ -599,6 +613,12 @@ INSERT INTO `users` (`username`, `password`, `Name`, `email`, `trn_date`, `PASSP
 --
 ALTER TABLE `airport`
   ADD UNIQUE KEY `AP_NAME` (`AP_NAME`);
+
+--
+-- Indexes for table `feedback`
+--
+ALTER TABLE `feedback`
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Indexes for table `flight`
