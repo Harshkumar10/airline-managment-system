@@ -1,19 +1,21 @@
 <?php
-include("a.php");
-require('d.php');
+    include("a.php");
+    require('d.php');
 ?>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="s.css">
+	<title>SHS Flight booking</title>
 </head>
 <body>
     <header>
-		<div><h1 class="logo"><img src="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="80" width="80"/></h1></div>
-		<div><h1 class="company-name">SHS Flight Booking</h1></div>
-	</header>
+		<div><h1 id="logo"><img src="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="80" width="80"/></h1></div>
+		<div><h1 id="company-name">SHS Flight Booking</h1></div>
+	</header><br>
 
 	<nav>
-		<div class="main">
+		<div id="main">
+		    <div><button onclick="window.location='./H.php' ">Home</button></div>
 			<div><button onclick="window.location='./i.php' ">Airport</button></div>
 			<div><button onclick="window.location='./v.php' ">Flight</button></div>
 			<div><button onclick="window.location='./Ticket.php' ">Ticket</button></div>
@@ -22,7 +24,7 @@ require('d.php');
 			<div><button onclick="window.location='./Ticket1.php' ">Ticket Prices</button></div>
 			<div><button onclick="window.location='./Profile.php' ">Profile</button></div>
 		</div>
-	</nav>
+	</nav><br>
 <?php 
  if(isset($_POST['submitS']))
 	 { 
@@ -55,6 +57,7 @@ require('d.php');
 	 {
          $res2 = $_POST['country'];
           ?>
+		 <h2 style="text-align:center;">Airport records</h2>
          <table width="70%" border="1" style="border-collapse:collapse;">
          <thead>
          <tr style="background-color:#FF0000">
@@ -114,7 +117,7 @@ require('d.php');
          $res7 = $_POST['source'];
 		 $res8= $_POST['destination'];
           ?>
-		  <h2 style="text-align:center;">Ticket records</h2>
+		  <h2 style="text-align:center;">Ticket Prices</h2>
          <table width="70%" border="1" style="border-collapse:collapse;">
          <thead>
          <tr style="background-color:#FF0000">
@@ -137,6 +140,8 @@ require('d.php');
                    </tr>
 			<?php }
 	        }?> 
+
+
 
 </body>
 </html>		
