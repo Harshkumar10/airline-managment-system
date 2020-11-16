@@ -6,16 +6,17 @@
 <html lang="en">
 <head>
 	<title>Airport Information</title> 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="s.css">
 </head>
 <body>
 	<header>
-		<div><h1 class="logo"><img src="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="80" width="80"/></h1></div>
-		<div><h1 class="company-name">SHS Flight Booking</h1></div>
-	</header>
+		<div><h1 id="logo"><img src="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="80" width="80"/></h1></div>
+		<div><h1 id="company-name">SHS Flight Booking</h1></div>
+	</header><br>
 
 	<nav>
-		<div class="main">
+		<div id="main">
+		    <div><button onclick="window.location='./H.php' ">Home</button></div>
 			<div><button onclick="window.location='./i.php' ">Airport</button></div>
 			<div><button onclick="window.location='./v.php' ">Flight</button></div>
 			<div><button onclick="window.location='./Ticket.php' ">Ticket</button></div>
@@ -36,7 +37,7 @@
 				<option value="Germany">Germany</option>
 			</select><br>
 			<input type="submit" name="submitC" value="Search">
-		</form>
+		</form><br>
 		<form action="Search.php" method="post">
 			<b>Search by State</b>
 			<select name="state" style="width:198px;height:40px;">
@@ -84,6 +85,43 @@
 			</tr>
 			<?php  } ?>
 	</tbody>
-	</table>
+	</table><br><br>
+	
+		<div id="chain">
+			<div>
+				<h5 style="color:white;">About this site</h5><br>
+				<a href='About.php' class='ca'>About us</a><br><br>
+				<a href='Privacy.php' class='ca'>Privacy Policy</a><br><br>
+				<a href='Feedback.php' class='ca'>Feedback</a>
+			</div>
+
+			<div>
+			<h5 style="color:white;">Popular Domestic Route</h5><br>
+			<a href='Search1.php' class='ca'>Chennai Mumbai</a><br><br>
+			<a href='Search1.php' class='ca'>Delhi Mumbai</a><br><br>
+			<a href='Search1.php' class='ca'>Delhi Goa</a>
+			</div>
+
+			<div>
+			<h5 style="color:white;">Popular International Route</h5><br>
+			<a href='Search1.php' class='ca'>Delhi Frankfurt</a><br><br>
+			<a href='Search1.php' class='ca'>Mumbai SanFrancisco</a><br><br>
+			<a href='Search1.php' class='ca'>Delhi SanFrancisco</a>
+			</div>
+
+			<div>
+			<h5 style="color:white;">Popular Indian Airlines</h5><br>
+			<a href='https://www.goindigo.in/' class='ca'>Indigo airlines</a><br><br>
+			<a href='http://www.airindia.in/' class='ca'>Air India airlines</a><br><br>
+			<a href='https://www.airasia.com/en/gb' class='ca'>Air asia airlines</a>
+			</div>
+
+			<div>
+			<h5 style="color:white;">International Airlines</h5><br>
+			<a href='https://www.autohotel.org/?gclid=Cj0KCQiAy579BRCPARIsAB6QoIZyjX0SHRJQXLRknyt2wnEEN3wkbaIZi8qyGlnWiFezrVP_a-hTg5EaAkN3EALw_wcB' class='ca'>Frankfurt airlines</a><br><br>
+			<a href='https://flyaerohp.com/?gclid=Cj0KCQiAy579BRCPARIsAB6QoIa7AOPY6K9y2-S4alUGN5AulYpdwjWo1xq7cDI8EWEnguu8Y1Yxmi4aAtjMEALw_wcB' class='ca'>Houston airlines</a><br><br>
+			<a href='https://www.skyscanner.co.in/flights-to/dfw/airlines-that-fly-to-dallas-fort-worth-international-airport.html' class='ca'>Fort Worth airlines</a>
+			</div>
+
 </body>
 </html>
