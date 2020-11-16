@@ -4,7 +4,7 @@ require('d.php');
 ?>
 <html>
 <head>
-<title>Profile</title>
+<title>profile</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
