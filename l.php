@@ -1,11 +1,14 @@
 <html>
 <head>
 <title>Login System</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="s.css">
 </head>
 <body>
-<h1 style="margin-left:535px;"><img src="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="100" width="100"/></h1>
-<h1 style="margin-left:450px;">SHS Flight Booking</h1>
+     <header>
+		<div><h1 id="logo"><img src="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="80" width="80"/></h1></div>
+		<div><h1 id="company-name">SHS Flight Booking</h1></div>
+	</header><br>
+
 <?php
 require('d.php');
 session_start();
