@@ -12,24 +12,27 @@ header{
     color: #fff;
 
 }
-.logo{
+#logo{
     margin-left: 20px;
 }
-.company-name{
+#company-name{
     margin-left: 40px;
     margin-top: 40px;
 }
-.main {
-
-    margin: 25px 50px 75px 100px;
+#main {
+    
     display: flex;
     flex-direction: row;
+}
+#main div{
+	margin:5px;
+	width:130px;
 }
 
 button{
     border: 1px #CCC solid;
     height: 30px;
-    width: 100px;
+    width: 150px;
     padding: 2%;
 }
 button:hover{
@@ -72,6 +75,19 @@ marquee{
 .a{
 	color:blue;
 	text-decoration: none;
+}
+.pa{
+    color:white;
+    background-color:#f44336;
+    text-decoration:none;
+    display:inline-block;
+    text-align:center;
+    padding: 14px 25px;
+}
+.pa:hover{
+    text-decoration: none;
+    background-color:yellow;
+    
 }
 .imgcontainer{
     text-align: left;
