@@ -8,7 +8,7 @@ if (!isset($_COOKIE['count']))
     {
         $cookie = ++$_COOKIE['count'];
         setcookie("count", $cookie,time()+ (86400*3),"/");
-		if($_COOKIE['count'] > 3)
+		if($_COOKIE['count'] > 5)
 		{
 			include('a.php');
         }
