@@ -1,8 +1,24 @@
-<!DOCTYPE html>
+<?php
+if (!isset($_COOKIE['count']))
+    {
+        $cookie = 1;
+        setcookie("count", $cookie);
+    }
+    else
+    {
+        $cookie = ++$_COOKIE['count'];
+        setcookie("count", $cookie,time()+ (86400*3),"/");
+		if($_COOKIE['count'] > 3)
+		{
+			include('a.php');
+        }
+	}
+?>
 <html lang="en">
 <head>
 	<title>Home</title>
 	<link rel="stylesheet" href="s.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header>
@@ -39,12 +55,21 @@
 	document.getElementById("salutation").innerHTML=g;
 	</script>
 
-
+  
 	<?php
 		session_start();
-		if(isset($_SESSION['username']))
-		echo $_SESSION['username']; 
+		if(isset($_SESSION['username'])){
+	    echo $_SESSION['username']; }
 	?>
+	<h2 style="text-align:left;">Places you may like</h2>
+	<?php
+	if(isset($_COOKIE["place"])){
+		echo $_COOKIE["place"];
+	}
+	else
+	{ echo"<b style='color:blue;'>we will Show the places of your Choice";
+	}
+	 ?>
 	<br><br><marquee  scrollamount="15" behavior="alternate">
 		<img src="https://image.shutterstock.com/image-vector/concept-illustration-template-book-your-600w-1197774070.jpg" height="350" width="500" />
 		<img src="https://image.shutterstock.com/image-photo/booking-flight-travel-traveler-search-600w-520314439.jpg" height="350" width="500" />
@@ -55,15 +80,6 @@
 		<img src="https://image.shutterstock.com/image-photo/flight-over-new-york-city-600w-313140194.jpg" height="350" width="500"/>
 		<img src="https://image.shutterstock.com/image-photo/flight-booking-ticket-icon-graphic-600w-617741123.jpg" height="350" width="500"/>
 	</marquee><br><br><br> 
-	<h2 style="text-align:left;">Places you may like</h2>
-	<?php
-	if(isset($_COOKIE["place"])){
-		echo $_COOKIE["place"];
-	}
-	else
-	{ echo"we will Show the places of your Choice";
-	}
-	 ?>
 	
 	<h2 style="text-align:center;">Most Searched Destinations</h2>
 	<div style="margin-left:150px;" >
