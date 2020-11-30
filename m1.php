@@ -5,15 +5,32 @@ require('d.php');
 <html>
 <head>
 <link rel="stylesheet" href="s.css">
-<title>Mail Ticket</title>
+<link rel="icon" href="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="100" width="100" type="image/gif">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
 </head>
 <body>
-<h1 style="text-align:center;"><img src="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="100" width="100"/></h1>
-<h1 style="text-align:center;">SHS Flight Booking</h1>
+<header>
+		<div><h1 id="logo"><img src="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="80" width="80"/></h1></div>
+		<div><h1 id="company-name">SHS Flight Booking</h1></div>
+	</header><br>
+
+	<nav>
+		<div id="main">
+		    <div><button onclick="window.location='./H.php' ">Home</button></div>
+			<div><button onclick="window.location='./i.php' ">Airport</button></div>
+			<div><button onclick="window.location='./v.php' ">Flight</button></div>
+			<div><button onclick="window.location='./Ticket.php' ">Ticket</button></div>
+			<div><button onclick="window.location='./lo.php' ">Logout</button></div>
+            <div><button onclick="window.location='./Ticket1.php' ">Ticket Prices</button></div>
+			<div><button onclick="window.location='./Profile.php' ">Profile</button></div>
+		</div>
+	</nav><br><br>
+
 <?php
  if(isset($_POST['submit']))
  {
-   $username=$_POST['username'];
+   $username=$_SESSION['username'];
    $apname=$_POST['apname'];
    $bdate = date("y-m-d");
    $name =$_POST['name'];
@@ -31,7 +48,7 @@ require('d.php');
    $ro1=mysqli_fetch_assoc($r1);
    if(!$ro1)
    {
-	 echo"No Flights found For This route Please Check for route Via Mumbai or Delhi or local route or fill the details properly";
+	 echo"<b style='color:Tomato'>No Flights found For This route Please Check for route Via Mumbai or Delhi or local route or fill the details properly";
    }
    else
    {
@@ -60,13 +77,13 @@ require('d.php');
      $message = "Airport:$apname\r\n   Flightcode:$fcode\r\n   Name:$name\r\n  Source:$source\r\n   Destination:$dest\r\n   CLASS:$class\r\n   Age:$age\r\n   Gender:$sex\r\n  Arrival time:$arr\r\n  Departure time:$dep";
      if (mail($email, $subject, $message, $headers)) 
 	 {
-	  echo"<b>Ticket has been booked for you We will mail your ticket  within 1 hour,Thanks for Using Our Services!</b>";
+	  echo"<b style='color:pink;'>Ticket has been booked for you We will mail your ticket  within 1 hour,Thanks for Using Our Services!</b>";
       echo"<br><br>";
       echo"<textarea rows='11' cols='75'>Airport: ".$apname."\nstatus: ".$status."\nFlightcode: ".$fcode."\nName: ".$name."\nSource: ".$source."\nDestination: ".$dest."\nCLASS: ".$class."\nAge: ".$age."\nGender: ".$sex."\nArrival time: ".$arr."\nDeparture time: ".$dep."</textarea>";
      }
     else
 	{
-	 echo"Check your details again";
+	 echo"<b style='color:red;'>Check your details again or wait if your network is slow</b>";
     }
     }
     }
@@ -92,8 +109,8 @@ require('d.php');
 			<div>
 			<h5 style="color:white;">Popular International Route</h5><br>
 			<a href='Search1.php' class='ca'>Delhi Frankfurt</a><br><br>
-			<a href='Search1.php' class='ca'>Mumbai SanFrancisco</a><br><br>
-			<a href='Search1.php' class='ca'>Delhi SanFrancisco</a>
+			<a href='Search1.php' class='ca'>Calicut SanFrancisco</a><br><br>
+			<a href='Search1.php' class='ca'>Delhi NewYorkCity</a>
 			</div>
 
 			<div>
