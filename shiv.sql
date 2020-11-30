@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:1433
--- Generation Time: Nov 16, 2020 at 07:57 AM
+-- Generation Time: Nov 30, 2020 at 05:12 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -218,7 +218,9 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`username`, `Pic`) VALUES
-('Shivraj@1999', 'Pics/twilight11.jpg');
+('Shivraj@1999', 'Pics/twilight11.jpg'),
+('u18co079', 'Pics/Twilight2.jpg'),
+('u18co091', 'Pics/twilight12.jpg');
 
 -- --------------------------------------------------------
 
@@ -602,7 +604,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `password`, `Name`, `email`, `trn_date`, `PASSPORTNO`, `AGE`, `SEX`, `CITY`, `STATE`, `COUNTRY`) VALUES
-('Shivraj@1999', '1234', 'Shivraj Singh Rathore', 'rathoreshivraj1999@gmail.com', '2020-11-09', 'A12345678', 21, 'Male', 'Mumbai', 'Maharashtra', 'India');
+('Shivraj@1999', '1234', 'Shivraj Singh Rathore', 'rathoreshivraj1999@gmail.com', '2020-11-09', 'A12345678', 21, 'Male', 'Mumbai', 'Maharashtra', 'India'),
+('u18co079', '1234', 'Siddharth damor', 'u18co079@coed.svnit.ac.in', '2020-11-18', 'A12345676', 21, 'Male', 'Mumbai', 'Maharashtra', 'India'),
+('u18co091', '1234', 'Harsh Kumar', 'u18co091@coed.svnit.ac.in', '2020-11-18', 'A12345677', 21, 'Male', 'Patna', 'Bihar', 'India');
 
 --
 -- Indexes for dumped tables
