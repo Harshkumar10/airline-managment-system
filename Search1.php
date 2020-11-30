@@ -6,6 +6,8 @@ require('d.php');
 <head>
 <title>Popular Domestic or International Routes</title>
 <link rel="stylesheet" href="s.css">
+<link rel="icon" href="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="100" width="100" type="image/gif">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
@@ -171,9 +173,9 @@ if (strcmp($result, "FrankfurtDelhi") == "true")
 
 <?php  }
 
-  if (strcmp($result, "MumbaiSanFrancisco") == "true")
+  if (strcmp($result, "CalicutSanFrancisco") == "true")
   {
-	$query2="SELECT * FROM flight WHERE SOURCE='Mumbai' AND DESTINATION='San Francisco'";
+	$query2="SELECT * FROM flight WHERE SOURCE='Calicut' AND DESTINATION='San Francisco'";
     $result2=mysqli_query($con,$query2) or die(mysql_error());
     $row2=mysqli_fetch_assoc($result2);?>
 	<table width="65%" border="1" style="border-collapse:collapse;">
@@ -197,10 +199,10 @@ if (strcmp($result, "FrankfurtDelhi") == "true")
 	</tbody>
     </table><br><br>
 	<div style="margin-left:250px;">
-	<img src="https://thebetterindia-english.sgp1.digitaloceanspaces.com/uploads/2018/07/In-Pics_-These-Mind-Blowing-Aerial-Shots-of-Mumbai-Were-Taken-by-a-Drone.jpg" height="350" width="350"/>
+	<img src="https://www.picnicwale.com/attractions/assets/sightseeing/calicut-in-kerala-cost.jpg" height="350" width="350"/>
 	<img src="https://www.outfrontmedia.com/-/media/images/ofm/markets/san-francisco/san-francisco-hero.jpg" height="350" width="350"/>
 	<div style="margin-left:120px;display:inline-block;">
-	<div style="margin-left:20px;display:inline;color:white;">Mumbai</div>
+	<div style="margin-left:20px;display:inline;color:white;">Calicut</div>
 	<div style="margin-left:310px;display:inline;color:white;">San Francisco</div>
 	</div>
 	</div><br>
@@ -208,9 +210,9 @@ if (strcmp($result, "FrankfurtDelhi") == "true")
 
 <?php  }
 
-if(strcmp($result, "DelhiSanFrancisco") == "true")
+if(strcmp($result, "DelhiNewYorkCity") == "true")
 {
-	$query2="SELECT * FROM flight WHERE SOURCE='Delhi' AND DESTINATION='San Francisco'";
+	$query2="SELECT * FROM flight WHERE SOURCE='Delhi' AND DESTINATION='New York City'";
     $result2=mysqli_query($con,$query2) or die(mysql_error());
     $row2=mysqli_fetch_assoc($result2);?>
 	<table width="65%" border="1" style="border-collapse:collapse;">
@@ -235,10 +237,10 @@ if(strcmp($result, "DelhiSanFrancisco") == "true")
     </table><br><br>
 	<div style="margin-left:250px;">
 	<img src="https://cdn.getyourguide.com/img/tour/5c981adda8383.jpeg/146.jpg" height="350" width="350"/>
-	<img src="https://www.outfrontmedia.com/-/media/images/ofm/markets/san-francisco/san-francisco-hero.jpg" height="350" width="350"/>
+	<img src="https://s7d2.scene7.com/is/image/TWCNews/nyc-skyline-ap_jpg" height="350" width="350"/>
 	<div style="margin-left:120px;display:inline-block;">
 	<div style="margin-left:20px;display:inline;color:white;">Delhi</div>
-	<div style="margin-left:310px;display:inline;color:white;">San Francisco</div>
+	<div style="margin-left:310px;display:inline;color:white;">New York City</div>
 	</div>
 	</div><br>
 
@@ -250,12 +252,12 @@ else{
 ?>
 <form action="" method="post">
 <select name="search" style="width:198px;height:40px;">
-<option value="ChennaiMumbai">ChennaiMumbai</option>
-<option value="DelhiMumbai">DelhiMumbai</option>
-<option value="GoaDelhi">GoaDelhi</option>
-<option value="FrankfurtDelhi">FrankfurtDelhi</option>
-<option value="MumbaiSanFrancisco">MumbaiSanFrancisco</option>
-<option value="DelhiSanFrancisco">DelhiSanFrancisco</option>
+<option value="ChennaiMumbai">Chennai Mumbai</option>
+<option value="DelhiMumbai">Delhi Mumbai</option>
+<option value="GoaDelhi">Goa Delhi</option>
+<option value="FrankfurtDelhi">Frankfurt Delhi</option>
+<option value="CalicutSanFrancisco">Calicut SanFrancisco</option>
+<option value="DelhiNewYorkCity">Delhi NewYorkCity</option>
 </select><br>
 <input type="submit" name="btn" value="Search"/>
 </form><br><br><br>
@@ -279,8 +281,8 @@ else{
 			<div>
 			<h5 style="color:white;">Popular International Route</h5><br>
 			<a href='Search1.php' class='ca'>Delhi Frankfurt</a><br><br>
-			<a href='Search1.php' class='ca'>Mumbai SanFrancisco</a><br><br>
-			<a href='Search1.php' class='ca'>Delhi SanFrancisco</a>
+			<a href='Search1.php' class='ca'>Calicut SanFrancisco</a><br><br>
+			<a href='Search1.php' class='ca'>Delhi NewYorkCity</a>
 			</div>
 
 			<div>
