@@ -5,6 +5,8 @@ include("a.php");
 <head>
 <title>About us</title>
 <link rel="stylesheet" href="s.css">
+<link rel="icon" href="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="100" width="100" type="image/gif">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
@@ -28,7 +30,7 @@ include("a.php");
 <div style="margin-left:1300px;">
 <h2>Developers</h2>
 <p style="color:pink;">Harsh Kumar</p>
-<p style="color:pink;">Siddarth Damor</p>
+<p style="color:pink;">Siddharth Damor</p>
 <p style="color:pink;">Shivraj Singh</p>
 </div>
 <div style="margin-left:80px;">
@@ -71,8 +73,8 @@ Give us a Shout for any assistance on new or existing bookings, and we will get 
 <div>
 <h5 style="color:white;">Popular International Route</h5><br>
 <a href='Search1.php' class='ca'>Delhi Frankfurt</a><br><br>
-<a href='Search1.php' class='ca'>Mumbai SanFrancisco</a><br><br>
-<a href='Search1.php' class='ca'>Delhi SanFrancisco</a>
+<a href='Search1.php' class='ca'>Calicut SanFrancisco</a><br><br>
+<a href='Search1.php' class='ca'>Delhi NewYorkCity</a>
 </div>
 <div>
 <h5 style="color:white;">Popular Indian Airlines</h5><br>
@@ -89,5 +91,6 @@ Give us a Shout for any assistance on new or existing bookings, and we will get 
 </div>
 </body>
 </html>
+
 
 
