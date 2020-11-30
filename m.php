@@ -1,7 +1,9 @@
 <html>
 <head>
 <link rel="stylesheet" href="s.css">
-<title>Mail</title>
+<link rel="icon" href="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="100" width="100" type="image/gif">
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
@@ -42,7 +44,7 @@ if (mail($email, $subject, $message, $headers)) {
 <h3>Password Sent Successfully Check your mails</h3>
 <br/>Click here to <a class='pa' href='l.php'>Login</a></div>";
 }
-?>
+?><br><br>
 
 		<div id="chain">
 			<div>
@@ -62,8 +64,8 @@ if (mail($email, $subject, $message, $headers)) {
 			<div>
 			<h5 style="color:white;">Popular International Route</h5><br>
 			<a href='Search1.php' class='ca'>Delhi Frankfurt</a><br><br>
-			<a href='Search1.php' class='ca'>Mumbai SanFrancisco</a><br><br>
-			<a href='Search1.php' class='ca'>Delhi SanFrancisco</a>
+			<a href='Search1.php' class='ca'>Calicut SanFrancisco</a><br><br>
+			<a href='Search1.php' class='ca'>Delhi NewYorkCity</a>
 			</div>
 
 			<div>
