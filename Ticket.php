@@ -5,6 +5,8 @@
 <head>
 <title>Ticket Registration</title>
 <link rel="stylesheet" href="s.css">
+<link rel="icon" href="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="100" width="100" type="image/gif">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
      <header>
@@ -27,7 +29,6 @@
 <div>
 <h2>Ticket booking</h2>
 <form  method="post" action="m1.php">
-<p><input type="text" name="username" placeholder="Enter username" required /></p>
 <select name="apname" style="width:198px;height:40px;">
   <option title="Calicut" value="Calicut International Airport" >Calicut International Airport</option>
   <option title="Chandigarh" value="Chandigarh International Airport" >Chandigarh International Airport</option>
@@ -94,14 +95,14 @@
   <option value="Surat">Surat</option>
   <option value="Tampa">Tampa</option>
 </select><br><br>
-<p><input type="date"  name="date"  placeholder="Enter date of travelling" required /></p>
+<p><input type="date"  name="date" id ="date" placeholder="Enter date of travelling" required /></p>
 <input type="radio" name="class" value="ECONOMY" required>ECONOMY CLASS<br>
 <input type="radio" name="class" value="BUSINESS" required>BUSINESS CLASS<br>
 <input type="radio" name="class" value="FIRST" required>FIRST CLASS
 <p><input type="text" name="name" placeholder="Enter your name" required /></p>
 <p><input type="text" name="age" placeholder="Enter age" required /></p>
 <p><input type="text" name="sex" placeholder="Enter gender" required /></p>
-<p><input name="submit" type="submit"  value="Book" /></p>
+<p><input name="submit" type="submit" value="Book" /></p>
 </form>
 </div>
 		<div id="chain">
@@ -122,8 +123,8 @@
 			<div>
 			<h5 style="color:white;">Popular International Route</h5><br>
 			<a href='Search1.php' class='ca'>Delhi Frankfurt</a><br><br>
-			<a href='Search1.php' class='ca'>Mumbai SanFrancisco</a><br><br>
-			<a href='Search1.php' class='ca'>Delhi SanFrancisco</a>
+			<a href='Search1.php' class='ca'>Calicut SanFrancisco</a><br><br>
+			<a href='Search1.php' class='ca'>Delhi NewYorkCity</a>
 			</div>
 
 			<div>
