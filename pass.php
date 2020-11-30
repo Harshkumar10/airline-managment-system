@@ -2,6 +2,8 @@
 <head>
 <title>Password recovery</title>
 <link rel="stylesheet" href="s.css">
+<link rel="icon" href="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="100" width="100" type="image/gif">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
@@ -38,7 +40,7 @@ if($rows==1){
 	$_SESSION['email']=$email;
 header("Location: m.php");
 }else{
-       echo"You are not a Registered Person";
+       echo"<b style='color:SlateBlue'>You are not a Registered Person</b>";
 }
 } else
 {?>
@@ -50,7 +52,7 @@ header("Location: m.php");
 <input name="submit" type="submit" value="Send Mail" />
 </form>
 </div>
-<?php } ?>
+<?php } ?><br><br>
 
 		<div id="chain">
 			<div>
@@ -70,8 +72,8 @@ header("Location: m.php");
 			<div>
 			<h5 style="color:white;">Popular International Route</h5><br>
 			<a href='Search1.php' class='ca'>Delhi Frankfurt</a><br><br>
-			<a href='Search1.php' class='ca'>Mumbai SanFrancisco</a><br><br>
-			<a href='Search1.php' class='ca'>Delhi SanFrancisco</a>
+			<a href='Search1.php' class='ca'>Calicut SanFrancisco</a><br><br>
+			<a href='Search1.php' class='ca'>Delhi NewYorkCity</a>
 			</div>
 
 			<div>
