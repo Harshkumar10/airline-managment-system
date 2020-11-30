@@ -1,13 +1,16 @@
 <html>
 <head>
-<title>Login System</title>
+<title>Signin/Signup</title>
 <link rel="stylesheet" href="s.css">
+<link rel="icon" href="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="100" width="100" type="image/gif">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
      <header>
 		<div><h1 id="logo"><img src="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="80" width="80"/></h1></div>
 		<div><h1 id="company-name">SHS Flight Booking</h1></div>
 	</header><br>
+	
 
 <?php
 require('d.php');
