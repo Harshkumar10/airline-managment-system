@@ -5,7 +5,9 @@
 <html>
 <head>
     <link rel="stylesheet" href="s.css">
+	<link rel="icon" href="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="100" width="100" type="image/gif">
 	<title>SHS Flight booking</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
