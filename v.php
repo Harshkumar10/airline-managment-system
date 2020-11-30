@@ -6,6 +6,8 @@ require('d.php');
 <head>
 	<title>Flights Information</title>
 	<link rel="stylesheet" href="s.css">
+	<link rel="icon" href="https://cdn.dribbble.com/users/2761722/screenshots/7138526/image.png" height="100" width="100" type="image/gif">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header>
@@ -18,7 +20,7 @@ require('d.php');
 		    <div><button onclick="window.location='./H.php' ">Home</button></div>
 			<div><button onclick="window.location='./i.php' ">Airport</button></div>
 			<div><button onclick="window.location='./v.php' ">Flight</button></div>
-			<div><button onclick="window.location='./Ticket.php' ">Ticket</button></div>
+			<div><button onclick="window.location='./Ticket.php'">Ticket</button></div>
 			<div><button onclick="window.location='./lo.php' ">Logout</button></div>
 
 			<div><button onclick="window.location='./Ticket1.php' ">Ticket Prices</button></div>
@@ -122,8 +124,8 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 			<div>
 			<h5 style="color:white;">Popular International Route</h5><br>
 			<a href='Search1.php' class='ca'>Delhi Frankfurt</a><br><br>
-			<a href='Search1.php' class='ca'>Mumbai SanFrancisco</a><br><br>
-			<a href='Search1.php' class='ca'>Delhi SanFrancisco</a>
+			<a href='Search1.php' class='ca'>Calicut SanFrancisco</a><br><br>
+			<a href='Search1.php' class='ca'>Delhi NewYorkCity</a>
 			</div>
 
 			<div>
