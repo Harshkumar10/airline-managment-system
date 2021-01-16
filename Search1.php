@@ -33,7 +33,7 @@ if(isset($_POST['btn']))
 $result= $_POST['search'];
 if (strcmp($result,"ChennaiMumbai") == "true")
 {
-	$query2="SELECT * FROM flight WHERE SOURCE='Chennai' AND DESTINATION='Mumbai'";
+    $query2="SELECT * FROM flight WHERE SOURCE='Chennai' AND DESTINATION='Mumbai'";
     $result2=mysqli_query($con,$query2) or die(mysql_error());
     $row2=mysqli_fetch_assoc($result2);?>
 	<table width="65%" border="1" style="border-collapse:collapse;">
@@ -69,7 +69,7 @@ if (strcmp($result,"ChennaiMumbai") == "true")
 
 if (strcmp($result, "DelhiMumbai") == "true")
 {
-	$query2="SELECT * FROM flight WHERE SOURCE='Delhi' AND DESTINATION='Mumbai' ";
+    $query2="SELECT * FROM flight WHERE SOURCE='Delhi' AND DESTINATION='Mumbai' ";
     $result2=mysqli_query($con,$query2) or die(mysql_error());
     $row2=mysqli_fetch_assoc($result2);?>
 	<table width="65%" border="1" style="border-collapse:collapse;">
@@ -139,7 +139,7 @@ if (strcmp($result, "GoaDelhi") == "true")
 <?php  }
 if (strcmp($result, "FrankfurtDelhi") == "true")
 {
-	$query2="SELECT * FROM flight WHERE SOURCE='Frankfurt' AND DESTINATION='Delhi'";
+    $query2="SELECT * FROM flight WHERE SOURCE='Frankfurt' AND DESTINATION='Delhi'";
     $result2=mysqli_query($con,$query2) or die(mysql_error());
     $row2=mysqli_fetch_assoc($result2);?>
 	<table width="65%" border="1" style="border-collapse:collapse;">
@@ -175,7 +175,7 @@ if (strcmp($result, "FrankfurtDelhi") == "true")
 
   if (strcmp($result, "CalicutSanFrancisco") == "true")
   {
-	$query2="SELECT * FROM flight WHERE SOURCE='Calicut' AND DESTINATION='San Francisco'";
+    $query2="SELECT * FROM flight WHERE SOURCE='Calicut' AND DESTINATION='San Francisco'";
     $result2=mysqli_query($con,$query2) or die(mysql_error());
     $row2=mysqli_fetch_assoc($result2);?>
 	<table width="65%" border="1" style="border-collapse:collapse;">
@@ -212,7 +212,7 @@ if (strcmp($result, "FrankfurtDelhi") == "true")
 
 if(strcmp($result, "DelhiNewYorkCity") == "true")
 {
-	$query2="SELECT * FROM flight WHERE SOURCE='Delhi' AND DESTINATION='New York City'";
+    $query2="SELECT * FROM flight WHERE SOURCE='Delhi' AND DESTINATION='New York City'";
     $result2=mysqli_query($con,$query2) or die(mysql_error());
     $row2=mysqli_fetch_assoc($result2);?>
 	<table width="65%" border="1" style="border-collapse:collapse;">
